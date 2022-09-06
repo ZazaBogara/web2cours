@@ -1,0 +1,62 @@
+
+.second_table{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	margin-top: 10%;
+}
+.second_img{
+	width: 50%;
+}
+.second_info .big_text{
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 50px;
+	color: #000000;
+	mix-blend-mode: normal;
+	margin-right: 38%; 
+}
+
+.second_info .small_text{
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 30px;
+	color: #7D7987;
+	mix-blend-mode: normal;
+	margin-right: 38%; 
+}
+
+.second_info button{
+	margin-top: 6%;
+	width: 164px;
+	height: 48px;
+	box-sizing: border-box;
+	background: #FB8F1D;
+	border-radius: 8px;
+	border-color: #FB8F1D; 
+}
+
+.second_info button div{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0.25px;
+	mix-blend-mode: normal;
+}
+@media screen and (max-width: 800px){
+	.second_img{
+		width: 0%;
+	}	
+	.second_info .big_text{
+		margin-right: 0%;
+	}
+	.second_info .small_text{
+		margin-right: 0%;
+	}
+}

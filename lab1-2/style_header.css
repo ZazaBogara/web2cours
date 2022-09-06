@@ -1,0 +1,266 @@
+header{
+	width: 80%;
+	height: 28%;
+	margin: auto; 
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.header_table{
+	margin-top: 5%;
+	margin-bottom: 5%; 
+	display: flex;
+	justify-content: space-between;
+	height: 15%;
+	width: 100%;
+}
+
+.out_circle{
+	margin-top: 0%; 
+	margin-left: 25%;
+	width: 41px;
+	height: 41px;
+
+	background: #1ABE84;
+	border-radius: 50%;
+}
+.in_circle{
+	position: absolute;
+	margin-top: 10px; 
+	margin-left: 10px;
+
+	width: 15px;
+	height: 15px;
+
+	background: #FB8F1D;
+	border: 3px solid #FFFFFF;
+	border-radius: 50%;
+}
+.logo{
+	width: 10%;
+	height: 100%;
+}
+.header_empty_space{
+	width: 30%;
+}
+.header_home{
+	padding-top: 0.5%;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 19px;
+	color: #202336;
+	width: 5%;
+}
+.header_destination{
+	padding-top: 0.5%;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 19px;
+	color: #B8BECD;
+	width: 8%;
+}
+.header_about{
+	padding-top: 0.5%;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 19px;
+	color: #B8BECD;
+	width: 5%;
+}
+.header_partner{
+	padding-top: 0.5%;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 19px;
+	color: #B8BECD;
+	width: 6%;
+}
+.header_login{
+	width: 10%;
+}
+.header_login button{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	align-items: center;
+	color: #FB8F1D;
+	box-sizing: border-box;
+	width: 80%;
+	height: 70%;
+	background-color: #FFFFFF;
+	border: 1px solid #FB8F1D;
+	border-radius: 8px;
+}
+.header_login button:hover{
+	background-color: #edebeb;
+}
+.header_register button:hover{
+	background-color: #d47917;
+}
+.header_register{
+	width: 10%;
+}
+.header_register button{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	align-items: center;
+	color: #FFFFFF;
+	width: 80%;
+	height: 70%;
+	background: #FB8F1D;
+	border-radius: 8px;
+	border-color: #FB8F1D; 
+}
+
+.header_main_info{
+	width: 100%;
+	height: 85%;
+}
+.info_header{
+	width: 50%;
+	height: 100%;
+}
+.image_header{
+	width: 50%;
+	height: 100%;
+}
+
+.info_header .big_text{
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	color: #202336;
+	mix-blend-mode: normal;
+	margin-left: 10%;
+	margin-bottom: 10%; 
+}
+
+.info_header .smaller_text{
+	width: 149px;
+	height: 27px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	color: #202336;
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+.info_header .small_rect{
+	width: 32px;
+	height: 2px;
+	background: #202336;
+	border-radius: 4px;
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+.info_header .select{
+	margin-left: 10%;
+	width: 80%;
+	height: 40%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+select{
+	border-radius: 4px;
+	width: 40%;
+	height: 20%;
+	box-sizing: border-box;
+	border: 0.8px solid #AFB0B9;
+	border-radius: 6px;
+
+}
+
+option{
+	font-family: 'Inter';
+	font-style: normal;
+}
+
+.header_explore{
+	width: 60px;
+	height: 60px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	align-items: center;
+	color: #FFFFFF;
+	mix-blend-mode: normal;
+
+	width: 28%;
+	height: 7%;
+	background: #FB8F1D;
+	border-radius: 8px;
+	border-color: #FB8F1D; 
+	margin-left: 10%;
+
+	font-family: 'Mulish';
+	font-weight: 400;
+	font-size: 17px;
+	align-items: center;
+	color: #FFFFFF;
+	mix-blend-mode: normal;
+}
+img{
+	width: 100%;
+}
+@media screen and (max-width: 1000px){
+.header_register button{
+		width: 80px;
+	}
+	.header_login button{
+		width: 80px;
+	}
+}
+@media screen and (max-width: 900px){
+	header{
+		height: 20%;
+	}
+	header .header_main_info{
+		height: 250%;
+	}
+	select{
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	}
+@media screen and (max-width: 800px){
+	.image_header{
+		width: 0%;
+	}
+	.header_empty_space{
+		width: 0%;
+	}	
+	header .header_main_info{
+		height: 250%;
+	}
+	.header_explore{
+		margin-left: 0%;
+	}
+	.header_register button{
+		width: 80px;
+	}
+	.header_login button{
+		width: 80px;
+	}
+}

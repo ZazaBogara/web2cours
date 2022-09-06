@@ -1,0 +1,40 @@
+.footer .logo{
+	width: 10%;
+}
+.footer .empty{
+	width: 40%;
+}
+.footer .info{
+	width: 20%;
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.25rem;
+	color: #848484;
+	mix-blend-mode: normal;
+}
+.footer{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+}
+.footer table{
+	width: 100%;
+}
+.footer .br{
+	margin-top: 3%; 
+	height: 0.5%;
+	background: #C4C4C4;
+}
+.footer .social_media{
+	width: 20%;
+	margin: auto;
+	margin-top: 3%;
+}
+@media screen and (max-width: 800px){
+	.footer .social_media{
+		width: 100%;
+		margin: auto;
+		margin-top: 3%;
+	}	
+}
