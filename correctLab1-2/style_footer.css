@@ -13,7 +13,7 @@ footer{
 	font-family: 'Mulish';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 5vw;
+	font-size: 2vw;
 	color: #848484;
 	mix-blend-mode: normal;
 }
@@ -41,32 +41,7 @@ footer{
 	justify-content: space-around;
 	margin-top: 3%;
 }
-@media screen and (min-width: 767px){
-	.footer .info{
-		font-size: 3vw;
-	}
-	.footer{
-		padding-top: 3%; 
-	}
-	footer{
-		height: 9%; 
-	}
-}
-@media screen and (min-width: 769px){
-	.footer .info{
-		font-size: 2vw;
-	}
-	footer{
-		height: 7%; 
-	}
-}
-@media screen and (min-width: 1440px){
-	footer{
-		height: 8в%; 
-	}
-}
-@media screen and (min-width: 1800px){
-	footer{
-		height: 12%; 
-	}
+
+@media screen and (max-width: 900px){
+	
 }
