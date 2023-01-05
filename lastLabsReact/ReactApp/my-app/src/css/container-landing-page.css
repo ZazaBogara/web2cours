@@ -1,0 +1,70 @@
+.container-landing-page {
+  height: 80em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Heading {
+  height: 25em;
+  display: flex;
+  justify-content: space-between;
+}
+.Heading img {
+  height: 15em;
+  margin-top: 7em;
+  width: 50%;
+}
+.Heading-content {
+  width: 50%;
+  margin-top: 7em;
+}
+.Heading-title {
+  font-size: 2em;
+  font-weight: 600;
+}
+.Heading-text {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.groups {
+  height: 25em;
+}
+
+.view-more {
+  align-self: center;
+  height: 10em;
+  width: 100%;
+  align-items: center;
+}
+.view-more-button {
+  height: 3em;
+  width: 14%;
+  margin: 0 43% 0 43%;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+.view-more-button:active{
+  background-color: darkgrey;
+}
+.landing-page-groups {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.landing-page-group {
+  width: 17%;
+}
+.landing-page-group-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+a{
+  width: 5em;
+  height: 3em;
+  text-decoration: none;
+}
