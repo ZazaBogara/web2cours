@@ -1,0 +1,27 @@
+.form{
+    height: 50em;
+    align-items: center;
+}
+
+.content{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.submitButton{
+    margin-left: 45%;
+    margin-top: 2em;
+    width: 10%;
+}
+.check{
+    margin-left: 0%;
+    width: 10%;
+}
+.containertag{
+    margin-left: 45%;
+    margin-top: 2em;
+    width: 10%;
+    align-items: center;
+}

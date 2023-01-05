@@ -3,31 +3,54 @@
 @import url("style_third.css");
 @import url("style_footer.css");
 
-
-@media screen and (max-width: 800){
-	header{
-		
-	}
-}
-.second{
-	width: 100%;
-	height: 28%;
-	background: #F8F8F8;
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 }
 
-footer{
-	background: #F8F8F8;
-	width: 100%;
-	height: 10%;
-}
 body{
 	margin: auto;
 	width: 100%;
-	height: 2714px;
+	height: 300vh;
 }
+@media screen and (max-width: 1025px){
+	body{
+		height: 260vh;
+	}
+	header{
+		height: 27%;
+	}
+	.third{
+		height: 30%;
+	}
+}
+
 @media screen and (max-width: 800px){
 	body{
 		width: 165%;
-		text-align: center;
+	}
+}
+@media screen and (max-width: 321px){
+	body{
+		width: 165%;
+		height: 300vh;
+	}
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {
+	body{
+		height: 300vh;
+	}
+	.third{
+		height: 50%;
+	}
+}
+@media screen and (max-width: 325px){
+	body{
+		height: 260vh;
+	}
+	.third{
+		height: 40%;
 	}
 }

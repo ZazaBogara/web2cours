@@ -1,0 +1,108 @@
+@import "headerStyles.css";
+@import "checkbox.css";
+
+body{
+	height: 59em;
+	margin: 0;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 2%;
+	height: 80%;
+}
+.left_section{
+	border-width: 1px;
+	border-right: solid lightgrey ;
+	height: 100%;
+	width: 30%;
+	margin: 0 auto 0 auto;
+	
+}
+.left_section .sort{
+	display: flex;
+	justify-content: space-around;
+}
+
+.left_section .unuseful_text{
+	color: grey;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.left_section .unuseful_text_big{
+	height: 20%;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+
+.right_section{
+	width: 60%;
+}
+
+.left_section_cont{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 40%;
+}
+.rect{
+	border: solid grey 0.5px;
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+.count{
+	width: 20%;
+	margin: 0 auto 0 auto;
+	border: solid blue 1px;	
+	border-radius: 5px;
+	height: 10%;
+	background-color: blue;
+	color: white;
+}
+.count:active{
+	background-color: darkblue;
+}
+.total{
+	color: grey;
+	font-size: 1.2em;
+	font-weight: 500;
+
+}
+
+
+.right_section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+
+
+.group{
+	width: 15em;
+	height: 40%;
+	margin: 0 0 0 0;
+	border-radius: 5px;
+	border: solid black 1px;
+}
+.group img{
+	height: 80%;
+	width: 100%;
+}
+.text_in_group{
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.edit{
+	color: white;
+	background-color: blue;
+	border: solid blue 1px;
+	border-radius: 5px;
+}
+.remove{
+	color: white;
+	background-color: red;
+	border: solid red 1px;
+	border-radius: 5px;
+}

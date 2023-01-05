@@ -1,0 +1,71 @@
+
+header{
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	height: 8%;
+	border-radius: 5px;
+	border: solid lightgrey;
+	border-width: 1px;
+}
+header .left_side{
+	display: flex;
+	justify-content: space-around;	
+	width: 30%;
+}
+header .left_side div{
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1.5em;
+	color: grey;
+}
+header .left_side button{
+	height: 100%;
+	background-color: white;
+	border: solid white;
+	border-width: 1px;
+}
+header .left_side .activated_header_button{
+	background-color: lightgrey;
+	height: 102%;
+	border: solid lightgrey;
+	border-width: 1px;
+}
+
+header .right_side{
+	display: flex;
+	justify-content: space-around;		
+	width: 50%;
+}
+header .right_side button{
+	margin: auto 0 auto 0;
+	height: 50%;
+	width: 15%;
+	border-radius: 5px;
+}
+header .search{
+	color: blue;
+	background-color: white; 
+	border: solid blue;
+	border-radius: 2px;
+	border-width: 1px;	
+}
+header .search:active{
+	background-color: lightblue; 
+}
+header .clear{
+	color: red;
+	background-color: white; 
+	border: solid red;
+	border-radius: 2px;
+	border-width: 1px;	
+}
+header .clear:active{
+	background-color: orange; 
+}
+header .right_side input{
+	width: 40%;
+	height: 50%;
+	margin: auto 0 auto 0 ;
+}

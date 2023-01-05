@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="" href="style_MyStudents.css">
+	
+	<title>Lab3-4</title>
+</head>
+<body>
+	<header>
+		<div class="left_side">
+			<div>MyStu</div>
+			<a href="MyStudents.html"><button class="activated_header_button">My Students</button></a>
+			<a href="CreateStudent.html"><button>Create Student</button></a>
+		</div>
+		<div class="right_side">
+			 <input type="text" placeholder="Type id here">
+			 <button class="search">Search</button>
+			 <button class="clear">Clear</button>
+		</div>
+	</header>
+	<div class="container">
+		<div class="left_section">
+			<div class="left_section_cont">
+				<div class="unuseful_text_big">
+					Manage Students
+				</div>
+				<div class="sort">
+					<div class="unuseful_text">
+						Sort by name:
+					</div>
+					<label class="el-switch">
+  						<input type="checkbox" name="switch" class="checkbox">
+  						<span class="el-switch-style"></span>
+					</label>
+				</div>
+				<div class="rect"></div>
+				<div class="unuseful_text">
+					Count Amount of students:
+				</div>
+				<button class="count">Count</button>
+				<div class="total">
+					Total amount: 0
+				</div>
+			</div>
+		</div>
+		<div class="right_section">
+			<div class="group">
+				<img src="avatars/ava1.jpg" alt="">
+				<div class="text_in_group">
+					TestGroup
+				</div>
+				<a href="EditStudent.html"><button class="edit" id="">
+					Edit
+				</button></a>
+				<button class="remove" id="">
+					Remove
+				</button>
+			</div>
+			<div class="group">
+				<img src="avatars/ava1.jpg" alt="">
+				<div class="text_in_group">
+					3
+				</div>
+				<a href="EditStudent.html"><button class="edit" id="">
+					Edit
+				</button></a>
+				<button class="remove" id="">
+					Remove
+				</button>
+			</div>
+			<div class="group">
+				<img src="avatars/ava1.jpg" alt="">
+				<div class="text_in_group">
+					1	
+				</div>
+				<a href="EditStudent.html"><button class="edit" id="">
+					Edit
+				</button></a>
+				<button class="remove" id="">
+					Remove
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="scripts/MyStudents.js"></script>
+</body>
+</html>

@@ -9,6 +9,9 @@
 	width: 80%;
 	margin: 0 auto;
 }
+.third .header{
+	width: 100%;
+}
 .third .header .info{
 	margin-top: 12%; 
 	width: 100%;
@@ -85,6 +88,25 @@
 	border-radius: 5%;
 }
 
+@media screen and (max-width: 1000px){
+	.third .images .text1{
+		margin-top: 1%; 
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1em;
+		align-items: center;
+		color: #042521;
+		mix-blend-mode: normal;
+	}
+
+		.images_container div .white_background{
+			margin-top: 18%; 
+			width: 11%;
+			height: 13%;
+		}
+}
+
 @media screen and (max-width: 800px){
 	.third{
 		height: 45%;
@@ -103,18 +125,80 @@
 	.images_container div .white_background{
 		position: absolute;
 		margin-top: 51%; 
-		width: 15%;
+		width: 20%;
 		height: 8%;
 		background-color: white; 
 		border-radius: 5%;
 	}
 }
-@media screen and (max-width: 600px){
+
+@media screen and (min-width: 1800px){
+	.images{
+		height: 70%;
+	}	
+	.images_container{
+		height: 100%;
+	}
+	.images_container img{
+		width: 100%;
+	}
+	.third .images .text1{
+		font-size: 1.2vw;
+	}
+}
+@media screen and (max-width: 1025px){
+	.images_container div{
+		width: 20%;
+	}
+	.images img{
+		width: 120%;
+	}
+	.third{
+		height: 20%;
+	}
+}
+@media screen and (max-width: 780px){
+	.images_container div .white_background{
+		height: 5%;
+		margin-top: 35%; 
+		width: 17%;
+		height: 5%;
+	}
+}
+@media screen and (max-width: 550px){
 	.third{
 		height: 35%;
 	}
 	.images_container div .white_background{
 		height: 5%;
+		margin-top: 49%; 
+		width: 25%;
+		height: 5%;
 	}
-
+	.images_container{
+		justify-content: space-between;
+	}
+	.third .images .text1{
+		width: 100%;
+	}
+	.images_container div{
+		width: 35%;
+	}
+	.images img{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 330px){
+	.images_container div{
+		width: 45%;
+	}
+	.images img{
+		width: 100%;
+	}
+	.images_container div .white_background{
+		height: 5%;
+		margin-top: 65%; 
+		width: 30%;
+		height: 5%;
+	}
 }
