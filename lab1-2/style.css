@@ -1,0 +1,33 @@
+@import url("style_header.css");
+@import url("style_second.css");
+@import url("style_third.css");
+@import url("style_footer.css");
+
+
+@media screen and (max-width: 800){
+	header{
+		
+	}
+}
+.second{
+	width: 100%;
+	height: 28%;
+	background: #F8F8F8;
+}
+
+footer{
+	background: #F8F8F8;
+	width: 100%;
+	height: 10%;
+}
+body{
+	margin: auto;
+	width: 100%;
+	height: 2714px;
+}
+@media screen and (max-width: 800px){
+	body{
+		width: 165%;
+		text-align: center;
+	}
+}
