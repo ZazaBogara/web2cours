@@ -25,6 +25,7 @@ public class TagController {
     @Autowired
     private TagDtoAssembler tagDtoAssembler;
 
+    @CrossOrigin
     @GetMapping(value = "/{tagId}")
     public ResponseEntity<TagDto> getTag(@PathVariable Integer tagId) {
         Tag tag = tagService.findById(tagId);
@@ -32,6 +33,7 @@ public class TagController {
         return new ResponseEntity<>(tagDto, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping(value = "")
     public ResponseEntity<CollectionModel<TagDto>> getAllTags() {
         List<Tag> tags = tagService.findAll();
@@ -39,6 +41,7 @@ public class TagController {
         return new ResponseEntity<>(tagDtos, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @PostMapping(value = "")
     public ResponseEntity<TagDto> addTag(@RequestBody Tag entity) {
         Tag newTag = tagService.create(entity);
@@ -46,12 +49,14 @@ public class TagController {
         return new ResponseEntity<>(tagDto, HttpStatus.CREATED);
     }
 
+    @CrossOrigin
     @PutMapping(value = "/{tagId}")
     public ResponseEntity<?> updateTag(@RequestBody Tag uTag, @PathVariable Integer tagId) {
         tagService.update(tagId, uTag);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @CrossOrigin
     @DeleteMapping(value = "/{tagId}")
     public ResponseEntity<?> deleteTag(@PathVariable Integer tagId) {
         tagService.delete(tagId);

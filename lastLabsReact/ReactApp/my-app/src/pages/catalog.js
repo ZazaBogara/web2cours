@@ -17,43 +17,49 @@ let tags = [
 function Catalog() {
   const [stateTags, setStateTags] = useState(tags);
 
-  useEffect(() => {
-    const tmp = async () => {
-      await fetch(site + "api/tags")
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          data._embedded.tags.forEach((tmp) => {
-            tags.push({id: tmp.id, tag: tmp.tag})
-          });
+  const fetchStateTags = async () => {
+    await fetch(site + "api/tags")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        data._embedded.tags.forEach((tmp) => {
+          tags.push({id: tmp.id, tag: tmp.tag})
         });
-      setStateTags(tags);
-    };
-    tmp();
-  }, []);
+      });
+    setStateTags(tags);
+  };
 
-  const [stateDATA, setStateDATA] = useState(DATA);
+  useEffect(() => {  
+    fetchStateTags();
+  }, [stateTags]);
+
+  let [stateDATA, setStateDATA] = useState(DATA);
+
+  const fetchStateData = async () => {
+    await fetch(site + "api/items")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        DATA = data._embedded.items;
+      });
+      setStateDATA(DATA);
+  };
 
   useEffect(() => {
-    const tmp = async () => {
-      await fetch(site + "api/items")
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          DATA = data._embedded.items;
-        });
-        setStateDATA(DATA);
-    };
-    tmp();
+    fetchStateData();
   }, []);
   
+  const saveResultFilters = (resultFilters) =>{
+    setStateDATA(resultFilters);
+  }
+
   return (
     <div className="App">
-      <HeaderOfSite page="catalog" />
+      <HeaderOfSite page="catalog" saveDate={saveResultFilters}/>
       <div className="container-catalog-page">
-        <FilterForm tags={stateTags} defaultTag={stateTags[0]}/>
+        <FilterForm tags={stateTags} defaultTag={stateTags[0]} saveDate={saveResultFilters}/>
         <div className="catalog-page-groups">
           {stateDATA.map((data, index) => {
             return (

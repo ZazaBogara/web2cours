@@ -2,7 +2,7 @@
 
 SET @OLD_UNIQUE_CHECKS = @@UNIQUE_CHECKS, UNIQUE_CHECKS = 0;
 SET @OLD_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS = 0;
-SET @OLD_SQL_MODE = @@SQL_MODE, SQL_MODE = ''ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'';
+SET @OLD_SQL_MODE = @@SQL_MODE, SQL_MODE = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
 -- Schema mydb
@@ -54,13 +54,13 @@ CREATE TABLE IF NOT EXISTS `itemtosell`.`item_has_tags`
     CONSTRAINT `fk_item_has_tags_item`
         FOREIGN KEY (`item_id`)
             REFERENCES `itemtosell`.`item` (`id`)
-            ON DELETE NO ACTION
-            ON UPDATE NO ACTION,
+            ON DELETE CASCADE
+            ON UPDATE CASCADE,
     CONSTRAINT `fk_item_has_tags_tags1`
         FOREIGN KEY (`tags_id`)
             REFERENCES `itemtosell`.`tags` (`id`)
-            ON DELETE NO ACTION
-            ON UPDATE NO ACTION
+            ON DELETE CASCADE
+            ON UPDATE CASCADE
 )
     ENGINE = InnoDB;
 
@@ -75,17 +75,17 @@ SET UNIQUE_CHECKS = @OLD_UNIQUE_CHECKS;
 START TRANSACTION;
 USE `itemtosell`;
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (1, ''zack'', ''lorem ipsum tralalala'');
+VALUES (1, 'zack', 'lorem ipsum tralalala');
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (2, ''apple'', ''very tasty fruit with tralalalalalalala'');
+VALUES (2, 'apple', 'very tasty fruit with tralalalalalalala');
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (3, ''orange'', ''very tasty fruit with tralalalalalalala'');
+VALUES (3, 'orange', 'very tasty fruit with tralalalalalalala');
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (4, ''ananas'', ''very tasty fruit with tralalalalalalala'');
+VALUES (4, 'ananas', 'very tasty fruit with tralalalalalalala');
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (5, ''pineapple'', ''very tasty fruit with tralalalalalalala'');
+VALUES (5, 'pineapple', 'very tasty fruit with tralalalalalalala');
 INSERT INTO `itemtosell`.`item` (`id`, `title`, `description`)
-VALUES (6, ''pomagrade'', ''very tasty fruit with tralalalalalalala'');
+VALUES (6, 'pomagrade', 'very tasty fruit with tralalalalalalala');
 
 COMMIT;
 
@@ -96,11 +96,11 @@ COMMIT;
 START TRANSACTION;
 USE `itemtosell`;
 INSERT INTO `itemtosell`.`tags` (`id`, `tag`)
-VALUES (1, ''fruit'');
+VALUES (1, 'fruit');
 INSERT INTO `itemtosell`.`tags` (`id`, `tag`)
-VALUES (2, ''veggitable'');
+VALUES (2, 'veggitable');
 INSERT INTO `itemtosell`.`tags` (`id`, `tag`)
-VALUES (3, ''stuff'');
+VALUES (3, 'stuff');
 
 COMMIT;
 
