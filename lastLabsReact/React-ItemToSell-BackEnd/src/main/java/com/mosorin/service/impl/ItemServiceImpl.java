@@ -1,13 +1,16 @@
 package com.mosorin.service.impl;
 
 import com.mosorin.domain.Item;
+import com.mosorin.domain.Tag;
 import com.mosorin.repository.ItemRepository;
 import com.mosorin.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -18,6 +21,9 @@ public class ItemServiceImpl implements ItemService {
         return itemRepository.findAllByTitle(name);
     }
 
+    public List<Item> findAllByTags(String tag1, String tag2){
+        return itemRepository.findAllByTags(tag1, tag2);
+    }
     public List<Item> findAll() {
         return itemRepository.findAll();
     }

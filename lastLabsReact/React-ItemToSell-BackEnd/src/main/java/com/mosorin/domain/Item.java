@@ -1,5 +1,8 @@
 package com.mosorin.domain;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
 
 import java.util.*;
@@ -59,6 +62,7 @@ public class Item {
         return Objects.hash(id, title, description);
     }
 
+
     public Set<Tag> getTags() {
         return tags;
     }
@@ -67,12 +71,15 @@ public class Item {
         this.tags = tags;
     }
     public List<Map<Integer, String>> getTagNames() {
-        List<Map<Integer, String>> names = new LinkedList<>();
-        for(Tag tag : tags){
-            Map<Integer, String> tmp = new HashMap<>();;
-            tmp.put(tag.getId(), tag.getTag());
-            names.add(tmp);
+        if(tags != null){
+            List<Map<Integer, String>> names = new LinkedList<>();
+            for(Tag tag : tags){
+                Map<Integer, String> tmp = new HashMap<>();;
+                tmp.put(tag.getId(), tag.getTag());
+                names.add(tmp);
+            }
+            return names;
         }
-        return names;
+        return new LinkedList<>();
     }
 }

@@ -1,7 +1,39 @@
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg";
+import searchButton from "../../images/searchButton.svg"
+import { site } from "../../App";
+import { useState, useEffect } from "react";
+
+let autoIncr = 0;
 
 function HeaderOfSite(props) {
+
+  let [searchInput, setStateSearchInput] = useState("someDefaultTextToSearchHopeNoOneCreateObjectLikeThat");
+
+  useEffect(() => {
+    const fetchSearchContent = async () => {
+      await fetch(`${site}api/items/findByTitle/${searchInput}`)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          if(data._embedded != null){
+            props.saveDate(data._embedded.items);
+          }
+        });
+    };
+    if(autoIncr===0)
+      fetchSearchContent();
+    autoIncr++;
+  }, [props, searchInput]);
+
+  const searchFilterHandler = (event) => {
+    autoIncr = 0;
+    if(event.target.parentElement.children[1]){
+      setStateSearchInput(event.target.parentElement.children[1].value);
+    }
+  };
+
   let home = (
     <Link to="/home">
       <button className="App-header-button">Home</button>
@@ -22,6 +54,7 @@ function HeaderOfSite(props) {
       <button className="App-header-button">Add item</button>
     </Link>
   );
+  let searchFilter = <div className="empty-div"> </div>;
   if (props.page === "catalog") {
     catalog = (
       <Link to="/catalog">
@@ -29,6 +62,12 @@ function HeaderOfSite(props) {
           Catalog
         </button>
       </Link>
+    );
+    searchFilter = (
+      <div className="App-header-searchFilter">
+        <button onClick={searchFilterHandler}><img src={searchButton} alt="searchButton"/></button>
+        <input type="text" placeholder="Search" />
+      </div>
     );
   } else if (props.page === "cart") {
     cart = (
@@ -64,7 +103,7 @@ function HeaderOfSite(props) {
         {cart}
         {createItem}
       </div>
-      <div className="empty-div"> </div>
+      {searchFilter}
     </header>
   );
 }
