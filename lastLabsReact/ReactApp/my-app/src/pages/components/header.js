@@ -63,6 +63,7 @@ function HeaderOfSite(props) {
         </button>
       </Link>
     );
+    if(window.location.href === "http://localhost:3000/catalog")
     searchFilter = (
       <div className="App-header-searchFilter">
         <button onClick={searchFilterHandler}><img src={searchButton} alt="searchButton"/></button>

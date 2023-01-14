@@ -2,77 +2,71 @@ import FooterOfSite from "./components/footer";
 import HeaderOfSite from "./components/header";
 import FilterForm from "./components/catalog-page/filter-form";
 import CatalogGroup from "./components/catalog-page/group";
-import { site } from "../App";
 import { useState, useEffect } from "react";
 import "../css/App.css";
 import "../css/container-catalog-page.css";
+import { getAllItem, getAllTags } from "../api";
+import LoadingLogo from "./components/catalog-page/loadingLogo";
 
-let DATA = [
-  
-];
-let tags = [
-
-];
+let DATA = [];
+let tags = [];
 
 function Catalog() {
+  const [stateLoading, setStateLoading] = useState(false);
   const [stateTags, setStateTags] = useState(tags);
 
   const fetchStateTags = async () => {
-    await fetch(site + "api/tags")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        data._embedded.tags.forEach((tmp) => {
-          tags.push({id: tmp.id, tag: tmp.tag})
-        });
-      });
-    setStateTags(tags);
+    setStateTags(await getAllTags());
   };
 
-  useEffect(() => {  
-    fetchStateTags();
+  useEffect(() => {
+    if (stateTags.length === 0) fetchStateTags();
   }, [stateTags]);
 
   let [stateDATA, setStateDATA] = useState(DATA);
 
   const fetchStateData = async () => {
-    await fetch(site + "api/items")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        DATA = data._embedded.items;
-      });
-      setStateDATA(DATA);
+    setStateDATA(await getAllItem());
   };
 
   useEffect(() => {
     fetchStateData();
+    setTimeout(() => {
+      setStateLoading(true);
+    }, 1000);
   }, []);
-  
-  const saveResultFilters = (resultFilters) =>{
+
+  const saveResultFilters = (resultFilters) => {
     setStateDATA(resultFilters);
-  }
+  };
 
   return (
     <div className="App">
-      <HeaderOfSite page="catalog" saveDate={saveResultFilters}/>
+      <HeaderOfSite page="catalog" saveDate={saveResultFilters} />
       <div className="container-catalog-page">
-        <FilterForm tags={stateTags} defaultTag={stateTags[0]} saveDate={saveResultFilters}/>
-        <div className="catalog-page-groups">
-          {stateDATA.map((data, index) => {
-            return (
-              <CatalogGroup
-                title={data.title}
-                bigText={"Amazing Stuff"}
-                text={data.description}
-                price={88}
-                key={index}
-              />
-            );
-          })}
-        </div>
+        <FilterForm
+          tags={stateTags}
+          defaultTag={stateTags[0]}
+          saveDate={saveResultFilters}
+        />
+        {stateLoading ? (
+          <div className="catalog-page-groups">
+            {stateDATA.map((data, index) => {
+              return (
+                <CatalogGroup
+                  title={data.title}
+                  bigText={"Amazing Stuff"}
+                  text={data.description}
+                  price={88}
+                  id={data.id}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <LoadingLogo />
+        )}
       </div>
       <FooterOfSite />
     </div>
