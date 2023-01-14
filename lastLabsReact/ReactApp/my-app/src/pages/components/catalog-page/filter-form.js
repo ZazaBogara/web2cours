@@ -1,13 +1,11 @@
 import FilterSelector from "./filter-selector";
 import { useState, useEffect } from "react";
-import { site } from "../../../App";
-
+import { getFilteredItems } from "../../../api";
 
 let res1 = null;
 let res2 = null;
 
 function FilterForm(props) {
-
   if (props && props.defaultTag && props.defaultTag.tag) {
     res1 = props.defaultTag.tag;
     res2 = props.defaultTag.tag;
@@ -16,27 +14,15 @@ function FilterForm(props) {
   const [stateApply, setStateApply] = useState([]);
 
   const fetchFilters = async () => {
-    await fetch(`${site}api/items/${res1}/${res2}`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        if (data._embedded) {
-          props.saveDate(data._embedded.items);
-        }
-      });
+    props.saveDate(await getFilteredItems(res1, res2));
     setStateApply(stateApply);
   };
-
 
   const applyHandler = () => {
     fetchFilters();
   };
 
-  useEffect(() => {
-    
-  }, [stateApply, props]);
-
+  useEffect(() => {}, [stateApply, props]);
 
   let result1 = (a) => {
     res1 = a;

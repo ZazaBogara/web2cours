@@ -1,6 +1,7 @@
 @import "header.css";
 @import "footer.css";
 @import "container-landing-page";
+@import "loader";
 
 .App{
 }

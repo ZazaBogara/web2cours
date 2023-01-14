@@ -5,31 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51fa11a6-2c63-4f47-a3f8-b861552a2b72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/61975980-3287-4648-8c6f-c848ae53fcde.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/61975980-3287-4648-8c6f-c848ae53fcde/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/61975980-3287-4648-8c6f-c848ae53fcde/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/61975980-3287-4648-8c6f-c848ae53fcde/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/61975980-3287-4648-8c6f-c848ae53fcde/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/controller/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/domain/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mosorin/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mosorin/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/itemToSell.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/itemToSell.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/controller/TagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/controller/TagController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/domain/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/domain/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/repository/ItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/service/ItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mosorin/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mosorin/service/impl/ItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/itemToSell.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/itemToSell.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/css/view-item-page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/filter-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/filter-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/item-add-page/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/item-add-page/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/view-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/view-item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +141,9 @@
       <workItem from="1672882481716" duration="14000" />
       <workItem from="1672882926456" duration="51000" />
       <workItem from="1672948711706" duration="3203000" />
+      <workItem from="1673464248011" duration="491000" />
+      <workItem from="1673487949801" duration="629000" />
+      <workItem from="1673573176568" duration="1273000" />
     </task>
     <servers />
   </component>

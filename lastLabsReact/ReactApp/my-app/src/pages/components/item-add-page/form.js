@@ -1,6 +1,6 @@
 import classes from "../../../css/add-item-page.module.css";
 import { useRef, useState, useEffect } from "react";
-import { site } from "../../../App";
+import { getAllTags, postItem } from "../../../api";
 
 let tags = [
   {
@@ -14,14 +14,7 @@ function StuffForm() {
 
   useEffect(() => {
     const tmp = async () => {
-      await fetch(site + "api/tags")
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          tags = [...data._embedded.tags];
-        });
-      setState(tags);
+      setState(await getAllTags());
     };
     tmp();
   }, []);
@@ -36,11 +29,10 @@ function StuffForm() {
     event.preventDefault();
 
     tagToAdd = [];
-    tags.forEach((tag, i) => {
+    state.forEach((tag, i) => {
       if (event.target.children[3].children[i].children[0].checked) {
         let tmp = { id: tag.id, tag: tag.tag };
         tagToAdd.push(tmp);
-        console.log(tmp);
       }
     });
 
@@ -52,13 +44,7 @@ function StuffForm() {
     };
 
     console.log(currentData);
-    fetch(site + "api/items", {
-      method: "POST",
-      body: JSON.stringify(currentData),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    postItem(currentData);
     //clear inputs
     if (clearRef.current.checked === true) {
       titleRef.current.value = "";
