@@ -1,0 +1,43 @@
+.imagee{
+    height: 20em;
+    margin-top: 3em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30em;
+    margin-bottom: 12em;
+}
+.goBack
+{
+  border: solid 1px black;
+  background-color: white;
+  width: 7em;
+  height: 2.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  background-color: #4b4b4b;
+  color: white;
+  width: 100%;
+}
+.goBack:hover,
+.finish:hover {
+  background-color: grey;
+}
+.successTitle{
+    font-size: 3em;
+    font-weight: 800;
+    margin: auto;
+    margin-bottom: 0.3em;
+}
+.description{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.aa{
+    margin: auto;
+    width: 10em;
+}

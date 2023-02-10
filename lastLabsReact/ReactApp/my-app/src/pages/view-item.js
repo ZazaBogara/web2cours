@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Redux-Cart/cartSlice";
 
+
 let DATA = {
   id: 2,
   title: "apple",
@@ -23,6 +24,9 @@ let DATA = {
 };
 
 function ViewItem() {
+  
+  const [countState, setCountState] = useState();
+
   const [data, setData] = useState(DATA);
   let dispatch = useDispatch();
   useEffect(() => {
@@ -63,6 +67,7 @@ function ViewItem() {
                   type="text"
                   className={classes.field1Input}
                   placeholder="1337.."
+                  onChange={e => {setCountState(e.target.value)}}
                 />
               </div>
               <div className={classes.field2}>
@@ -80,7 +85,16 @@ function ViewItem() {
             <Link to="../catalog">
               <button className={classes.goBack}>Go Back</button>
             </Link>
-            <button className={classes.addToCart} onClick={dispatch(addToCart())}>Add to Cart</button>
+            <button
+              className={classes.addToCart}
+              onClick={() => {
+                DATA.count = countState || 1;
+                console.log(DATA.count);
+                dispatch(addToCart(DATA));
+              }}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

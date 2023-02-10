@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51fa11a6-2c63-4f47-a3f8-b861552a2b72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/css/view-item-page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/filter-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/filter-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/catalog-page/group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/item-add-page/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/components/item-add-page/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/Redux-Cart/cartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/Redux-Cart/cartSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/view-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactApp/my-app/src/pages/view-item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +137,11 @@
       <workItem from="1673464248011" duration="491000" />
       <workItem from="1673487949801" duration="629000" />
       <workItem from="1673573176568" duration="1273000" />
+      <workItem from="1675724296091" duration="6609000" />
+      <workItem from="1675773502954" duration="628000" />
+      <workItem from="1675844514082" duration="2085000" />
+      <workItem from="1675928552713" duration="1329000" />
+      <workItem from="1675966839267" duration="804000" />
     </task>
     <servers />
   </component>
