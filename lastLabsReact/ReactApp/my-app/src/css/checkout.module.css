@@ -1,0 +1,61 @@
+.formik {
+  height: 30em;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 30em;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 12em;
+}
+.text_input {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+.text_input_error {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.input_feedback {
+  color: red;
+}
+.outline {
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+.goBack,
+.finish {
+  border: solid 1px black;
+  background-color: white;
+  width: 7em;
+  height: 2.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  margin: 0 1em 0 1em;
+}
+.finish {
+  background-color: #4b4b4b;
+  color: white;
+}
+
+.goBack:hover,
+.finish:hover {
+  background-color: grey;
+}
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  width: 100%;
+}

@@ -1,0 +1,44 @@
+.total {
+  text-align: right;
+  margin-right: 13.5em;
+  margin-bottom: 1em;
+}
+.shoppingCart {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.goBack,
+.finish {
+  border: solid 1px black;
+  background-color: white;
+  width: 7em;
+  height: 2.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  margin: 0 1em 0 1em;
+}
+.finish {
+  background-color: #4b4b4b;
+  color: white;
+}
+a {
+  margin-right: 2em;
+}
+.goBack:hover,
+.finish:hover {
+  background-color: grey;
+}
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_container {
+  height: 30em;
+}
+.checkout{
+  width: 5%;
+}
